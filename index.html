@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turber: Noche en la Ciudad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <!-- VÍNCULO A ARCHIVO DE ESTILOS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CONTROLES DE ESTADO (RADIO BUTTONS EN CSS PURO) -->
+  <input type="radio" name="flow" id="st-intro" checked>
+  <input type="radio" name="flow" id="st-video-intro">
+  <input type="radio" name="flow" id="st-phone">
+
+  <!-- RAMA LOLITA -->
+  <input type="radio" name="flow" id="st-vid-lolita">
+  <input type="radio" name="flow" id="st-card-lolita">
+  <input type="radio" name="flow" id="st-dec-lolita">
+  <input type="radio" name="flow" id="st-fin-lolita-a">
+  <input type="radio" name="flow" id="st-fin-lolita-b">
+
+  <!-- RAMA ROGELIO -->
+  <input type="radio" name="flow" id="st-vid-rogelio">
+  <input type="radio" name="flow" id="st-card-rogelio">
+  <input type="radio" name="flow" id="st-dec-rogelio">
+  <input type="radio" name="flow" id="st-fin-rogelio-a">
+  <input type="radio" name="flow" id="st-fin-rogelio-b">
+
+  <!-- RAMA ROSALÍA -->
+  <input type="radio" name="flow" id="st-vid-rosalia">
+  <input type="radio" name="flow" id="st-card-rosalia">
+  <input type="radio" name="flow" id="st-dec-rosalia">
+  <input type="radio" name="flow" id="st-fin-rosalia-a">
+  <input type="radio" name="flow" id="st-fin-rosalia-b">
+
+  <div class="comic-container">
+
+    <!-- 1. INTRODUCCIÓN DE MIGUEL -->
+    <div id="node-intro" class="node">
+      <div class="comic-card">
+        <div class="comic-badge">TURBER - NOCHE EN LA CIUDAD</div>
+        <h1 class="comic-title">EL ÚLTIMO VIAJE</h1>
+        
+        <div class="zocalo">
+          "Esta fría y húmeda noche en la ciudad te recuerda algo lejano... pensas en las malas decisiones que tomaste durante tu vida para terminar como estas ahora:"
+        </div>
+        
+        <div class="zocalo">
+          "Soltero, medio viejo,con mil deudas y sin un peso para comer una buena comida decente, o tomar un trago que ahoge tus penas."
+        </div>
+
+        <div class="zocalo">
+          "Vas vagando dia a dia sin rumbo por las calles grises y tristes, observas a la gente buscando algo que tengan para ofrecerte, pero sentis que todo es en vano, y que la rutina te deja lentamente sin palabras.."
+        </div>
+
+        <div class="zocalo">
+          "Tu unica fuente de ingresos es este auto destartalado y viejo que te acompaña, no te queda mas remedio que seguir asi por el resto de tus miserables dias....pero.. tu ultimo viaje esta a punto de llegar"
+        </div>
+
+        <label for="st-video-intro" class="btn-comic">[ INICIAR RECORRIDO ]</label>
+      </div>
+    </div>
+
+    <!-- 2. VIDEO INTRO -->
+    <div id="node-video-intro" class="node">
+      <div class="comic-card">
+        <div class="zocalo video-zocalo">
+          Manejás sin rumbo entre las calles grises de la ciudad mientras la lluvia golpea el parabrisas. De pronto, tu viejo celular suena notificando solicitudes de viajes disponibles...
+        </div>
+        <div class="media-frame">
+          <video autoplay loop muted playsinline class="responsive-video">
+            <source src="https://files.catbox.moe/p1ha4v.mp4" type="video/mp4">
+          </video>
+        </div>
+        <label for="st-phone" class="btn-comic">[ ATENDER CELULAR ]</label>
+      </div>
+    </div>
+
+    <!-- 3. CELULAR Y SELECCIÓN DE PASAJERO -->
+    <div id="node-phone" class="node">
+      <div class="comic-card">
+        <div class="app-welcome">
+          App: ¡Bienvenido Miguel! Tienes 3 nuevos viajes:
+        </div>
+        <div class="zocalo video-zocalo">
+          Pasa el cursor sobre cada solicitud para ver la ganancia estimada y seleccioná a quién querés pasar a buscar:
+        </div>
+        <div class="media-frame">
+          <img src="https://i.imgur.com/73iZ8Ap.png" alt="Celular Turber" class="phone-img">
+          
+          <!-- HOTSPOT LOLITA -->
+          <label for="st-vid-lolita" class="phone-hotspot" style="top: 36%; height: 16%;">
+            <span class="tooltip-price">Ganancia: $1.650</span>
+          </label>
+
+          <!-- HOTSPOT ROGELIO -->
+          <label for="st-vid-rogelio" class="phone-hotspot" style="top: 54%; height: 16%;">
+            <span class="tooltip-price">Ganancia: $3.800</span>
+          </label>
+
+          <!-- HOTSPOT ROSALÍA -->
+          <label for="st-vid-rosalia" class="phone-hotspot" style="top: 72%; height: 16%;">
+            <span class="tooltip-price">Ganancia: $2.400</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== RAMA 1: LOLITA FANTASIA ==================== -->
+    <div id="node-vid-lolita" class="node">
+      <div class="comic-card">
+        <div class="zocalo video-zocalo">
+          Aceptás el viaje de Lolita Fantasia ($1650). Avanzás por las avenidas iluminadas con luces de neón en dirección al punto de encuentro...
+        </div>
+        <div class="media-frame">
+          <video autoplay loop muted playsinline class="responsive-video">
+            <source src="https://files.catbox.moe/0oe7iw.mp4" type="video/mp4">
+          </video>
+        </div>
+        <label for="st-card-lolita" class="btn-comic">[ VER PASAJERA ]</label>
+      </div>
+    </div>
+
+    <div id="node-card-lolita" class="node">
+      <div class="passenger-card">
+        <div class="image-container">
+          <img src="https://i.imgur.com/wllePPD.jpeg" alt="Lolita Fantasia">
+          <div class="badge-info">Lolita Fantasia (32 años) - Destino: Pool/Bar "Fausto" ($1650)</div>
+        </div>
+
+        <div class="speech-bubble">
+          "ay! Dios esta humedad me deja el pelo hecho un asco! Como lo tengo ? - lolita te mira con ojitos mientras se acomoda el pelo. Se acomoda el vestido y saca de su cartera un pintalabios. Se pinta mirándose al espejo retrovisor- esta noche va a ser especial, sabias? Voy a recuperar lo que es mio.. ese sinvergüenza.. no se va a salir con la suya! Meses y meses dandole mi dinero y mi amor, y así es como me lo paga?! Los hombres son todos iguales.. te engatusan y te dejan tirada! ...hoy no mi amor -se mira las uñas mientras hace mueca con los labios- y vos?.. No me vas a dejar tirada no? - te observa de arriba a abajo- Se nota que te falta una buena mujer jajaja, pero no te preocupes porque aca esta lolita,la justiciera- te tira un beso-"
+        </div>
+
+        <div class="zocalo">
+          Llegando a la esquina del pool/bar, observas un tumulto de gente, antes de frenar completamente, Lolita se baja rápidamente de tu vehículo y encara furiosa a un hombre grandote vestido de traje. aguardas dentro del vehiculo para observar lo que sucede: La situación se torna un caos con toda la gente, Lolita insultando a diestra y siniestra, hasta que el hombre saca de su cintura una pistola y apunta a la cabeza de Lolita.
+        </div>
+
+        <label for="st-dec-lolita" class="btn-comic">[ TOMAR DECISIÓN ]</label>
+      </div>
+    </div>
+
+    <div id="node-dec-lolita" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">¿QUÉ PENSAS HACER?</h2>
+        <div class="choice-container">
+          <label for="st-fin-lolita-a" class="btn-choice">
+            <span class="choice-title">DECISIÓN A</span>
+            <span class="choice-desc">Intervenir en la pelea</span>
+          </label>
+          <label for="st-fin-lolita-b" class="btn-choice">
+            <span class="choice-title">DECISIÓN B</span>
+            <span class="choice-desc">No intervenir en la pelea.</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div id="node-fin-lolita-a" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">BAD ENDING</h2>
+        <div class="star-rating">★ ☆ ☆ ☆ ☆</div>
+        <img src="https://i.imgur.com/wePfI9T.png" alt="Lolita Final A" class="ending-img">
+        <div class="zocalo">
+          tratas de separar a Lolita del hombre, pero este sin pensarlo dos veces apunta a tu cabeza y dispara. Bad ending: 1 estrella, pero por lo menos tuviste huevos y moriste como un héroe (ponele).
+        </div>
+        <label for="st-intro" class="btn-comic">[ REINICIAR HISTORIA ]</label>
+      </div>
+    </div>
+
+    <div id="node-fin-lolita-b" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">BAD ENDING</h2>
+        <div class="star-rating">☆ ☆ ☆ ☆ ☆</div>
+        <img src="https://i.imgur.com/lqb6U90.jpeg" alt="Lolita Final B" class="ending-img">
+        <div class="zocalo">
+          Te quedas dentro del vehiculo, Lolita forcejea el arma con el hombre con tan mala suerte que salen dos balas perdidas, una termina en el cristal del acompañante y otro disparo en tu cuello. Te desangras lentamente hasta perder el conocimiento. Bad ending: 0 estrellas, moriste patéticamente como un cobarde.
+        </div>
+        <label for="st-intro" class="btn-comic">[ REINICIAR HISTORIA ]</label>
+      </div>
+    </div>
+
+    <!-- ==================== RAMA 2: ROGELIO BUENDÍA ==================== -->
+    <div id="node-vid-rogelio" class="node">
+      <div class="comic-card">
+        <div class="zocalo video-zocalo">
+          Aceptás el viaje de Rogelio Buendía ($3800). Te adentrás en los pasajes oscuros y fríos de los barrios residenciales...
+        </div>
+        <div class="media-frame">
+          <video autoplay loop muted playsinline class="responsive-video">
+            <source src="https://files.catbox.moe/a5kclh.mp4" type="video/mp4">
+          </video>
+        </div>
+        <label for="st-card-rogelio" class="btn-comic">[ VER PASAJERO ]</label>
+      </div>
+    </div>
+
+    <div id="node-card-rogelio" class="node">
+      <div class="passenger-card">
+        <div class="image-container">
+          <img src="https://i.imgur.com/eAPEBa4.jpeg" alt="Rogelio Buendía">
+          <div class="badge-info">Rogelio Buendía (44 años) - Destino: Casa en calle Martín Fierro al 1485 ($3800)</div>
+        </div>
+
+        <div class="speech-bubble">
+          "buenas noches....feo clima eh?-se queda en silencio mirando hacia el frente- estoy medio preocupado viste...me acaban de echar del laburo...no se como voy a decírselo a mi esposa....aaah necesito un trago fuerte, usted toma amigo?-te mira mientras apoya su codo en la ventana y se lleva el puño a la cara, luego vuelve a mirar al frente-...debe ser difícil estar estas noches en la calle... por suerte tengo a mi esposa para tener algo por lo que luchar...ella va a entender..no?"
+        </div>
+
+        <div class="zocalo">
+          Estacionas frente a la casa de Rogelio. mientras le cobras por el viaje, ambos ven como desde la ventana de la casa sale un hombre poniéndose los pantalones rápidamente . Rogelio shockeado por la infidelidad de su esposa, baja lentamente del auto mientras el hombre trata de huir por el techo. La esposa sale inmediatamente a tranquilizarlo , pero Rogelio Buendia, enfurecido de rabia, trata de bajar al hombre del techo tironeando de sus calzones. Finalmente cae fuertemente sobre el asfalto de la entrada y el hombre muere estúpidamente.
+        </div>
+
+        <label for="st-dec-rogelio" class="btn-comic">[ TOMAR DECISIÓN ]</label>
+      </div>
+    </div>
+
+    <div id="node-dec-rogelio" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">¿QUÉ PENSAS HACER?</h2>
+        <div class="choice-container">
+          <label for="st-fin-rogelio-a" class="btn-choice">
+            <span class="choice-title">DECISIÓN A</span>
+            <span class="choice-desc">Ayudas a escapar a Rogelio BuenDia</span>
+          </label>
+          <label for="st-fin-rogelio-b" class="btn-choice">
+            <span class="choice-title">DECISIÓN B</span>
+            <span class="choice-desc">Dejas a Rogelio Buendia a su suerte</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div id="node-fin-rogelio-a" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">MID ENDING</h2>
+        <div class="star-rating">★ ★ ★ ☆ ☆</div>
+        <img src="https://i.imgur.com/WfKU485.jpeg" alt="Rogelio Final A" class="ending-img">
+        <div class="zocalo">
+          ayudas a escapar a Rogelio manejando la chata a mil. ya no hay escapatoria, los patrulleros van detras de ustedes, sos capturado como complice de asesinato. “mid ending” 3 estrellas, ahora tenes un nuevo amigo y un lugar donde comer y dormir sin preocuparte por las deudas.
+        </div>
+        <label for="st-intro" class="btn-comic">[ REINICIAR HISTORIA ]</label>
+      </div>
+    </div>
+
+    <div id="node-fin-rogelio-b" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">BAD ENDING</h2>
+        <div class="star-rating">★ ★ ☆ ☆ ☆</div>
+        <img src="https://i.imgur.com/LCeb9C7.jpeg" alt="Rogelio Final B" class="ending-img">
+        <div class="zocalo">
+          Tratando de arrancar el vehículo para salir de la escena del crimen, Rogelio desesperado corre hacia vos. Te tira del asiento hacia la calle y huye frenéticamente en tu auto hasta chocar con un árbol. Tu chata explota y ahora tenes que comerte un día en la comisaría testificando lo sucedido. Bad ending: 2 estrellas, por lo menos el seguro del auto te cubrió los daños y pudiste conseguir un modelo nuevo.
+        </div>
+        <label for="st-intro" class="btn-comic">[ REINICIAR HISTORIA ]</label>
+      </div>
+    </div>
+
+    <!-- ==================== RAMA 3: ROSALÍA LÓPEZ ==================== -->
+    <div id="node-vid-rosalia" class="node">
+      <div class="comic-card">
+        <div class="zocalo video-zocalo">
+          Aceptás el viaje de Rosalía López ($2400). Ponés marcha hacia el sector de salas de juego y casinos de la ciudad...
+        </div>
+        <div class="media-frame">
+          <video autoplay loop muted playsinline class="responsive-video">
+            <source src="https://files.catbox.moe/6fbynv.mp4" type="video/mp4">
+          </video>
+        </div>
+        <label for="st-card-rosalia" class="btn-comic">[ VER PASAJERA ]</label>
+      </div>
+    </div>
+
+    <div id="node-card-rosalia" class="node">
+      <div class="passenger-card">
+        <div class="image-container">
+          <img src="https://i.imgur.com/MDCK1g6.jpeg" alt="Rosalía López">
+          <div class="badge-info">Rosalía López (67 años) - Destino: Casino "Slots" ($2400)</div>
+        </div>
+
+        <div class="speech-bubble">
+          "hola querido, se puede fumar acá adentro?-antes de que puedas llegar a decir algo enciende el cigarrillo y le da unas pitadas igual- estoy muy nerviosa podes creer... mira mis manos!- te muestra su mano temblorosa mientras te mira fijo a lo ojos- ay ay ay... que va a ser de mi dios querido- se lleva la mano a la cabeza mientras mira sus pies, luego te mira- si no me va bien me fundo! Pero me fundo eh!!! Todos mis ahorros... como estas vos de plata nene? - te mira rapidamente y mira hacia el frente, te vuelve a mirar de reojo- se ve que no muy bien... pero tendras unos ahorros por ahi, seguro! Un hombre tan galan como vos- te tira el humo en el rostro y gira su cabeza rapido hacia la ventana de su lado- aca, querido aca! Estacionate ahi y baja conmigo, dale que la noche es joven!"
+        </div>
+
+        <div class="zocalo">
+          Llegando al parking del casino, Rosalia te invita a apostar con ella, cómo es tu último viaje de la noche y te agarró una sed repentina por haber estado largas horas sin hidratarte, no tomas mejor decisión que acompañarla a timbear, con esperanza en luego comprar unos tragos con el dinero ganado. Una vez dentro del casino Rosalia te insinúa que anda sin dinero y te pide exactamente el monto de dinero que te costó conseguir durante dos semanas de trabajo.
+        </div>
+
+        <label for="st-dec-rosalia" class="btn-comic">[ TOMAR DECISIÓN ]</label>
+      </div>
+    </div>
+
+    <div id="node-dec-rosalia" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">¿QUÉ PENSAS HACER?</h2>
+        <div class="choice-container">
+          <label for="st-fin-rosalia-a" class="btn-choice">
+            <span class="choice-title">DECISIÓN A</span>
+            <span class="choice-desc">Confías ciegamente y le das la guita a Rosalía.</span>
+          </label>
+          <label for="st-fin-rosalia-b" class="btn-choice">
+            <span class="choice-title">DECISIÓN B</span>
+            <span class="choice-desc">No le das el dinero a Rosalía.</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div id="node-fin-rosalia-a" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">GOOD ENDING</h2>
+        <div class="star-rating">★ ★ ★ ★ ★</div>
+        <img src="https://i.imgur.com/FB4i71b.png" alt="Rosalía Final A" class="ending-img">
+        <div class="zocalo">
+          Rosalia juega las primeras manos en el Blackjack y pierde parte del dinero, luego de unas tiradas en las máquinas tragaperras multiplica drásticamente el dinero llegando a dejar casi en quiebra al casino. De la emoción ambos pasan juntos una gran noche de amor. luego de esa jugada ganadora te enamoraste, te casaste y ambos se compraron un yate de lujo para recorrer el mundo. Good ending: 5 estrellas. literalmente ganaste, bien por ti.
+        </div>
+        <label for="st-intro" class="btn-comic">[ REINICIAR HISTORIA ]</label>
+      </div>
+    </div>
+
+    <div id="node-fin-rosalia-b" class="node">
+      <div class="comic-card">
+        <h2 class="comic-title">BAD ENDING</h2>
+        <div class="star-rating">☆ ☆ ☆ ☆ ☆</div>
+        <img src="https://i.imgur.com/tSSqLQK.jpeg" alt="Rosalía Final B" class="ending-img">
+        <div class="zocalo">
+          Rosalía juega su poco dinero en manos de Blackjack, pierde todo su dinero con el malvado crupier y se pone muy triste, al punto de llorar. Miguel observando esta situación, se sensibiliza e invita a Rosalía a tomar unos tragos para pasar esta mala racha. Pasadas unas copas la invitas a tu casa y pasas una noche loca, al despertar te das cuenta de que tanto Rosalía, como tu dinero, ropa y tu vehículo ya no están. Rosalia te ha desvalijado. Bad ending: 0 estrellas, te pasa por boludo, que queres que te diga.
+        </div>
+        <label for="st-intro" class="btn-comic">[ REINICIAR HISTORIA ]</label>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
